@@ -7,6 +7,7 @@ Some of the training results and adjustments are discussed below.
 AdamW Optimizer; \
 Learning Rate: 1e-3; \
 Dropout: 0.2
+
 ![first training output](assets/trainingVSvalidationLoss01.png)
 
 The graph indicates that the model initially learned effectively before performance gradually degraded, signaling that an excessively high learning rate caused the optimization to overshoot the gradient descent minima. To address this, both the learning rate and dropout rate were lowered for the subsequent training phase.
@@ -16,6 +17,7 @@ The graph indicates that the model initially learned effectively before performa
 AdamW Optimizer; \
 Learning Rate: 3e-4; \
 Dropout: 0.05
+
 ![second training output](assets/trainingVSvalidationLoss02.png)
 
 Although the second test successfully lowered the training loss, the validation loss continued to climb after an initial improvement, causing a widening gap between the two curves—a classic phenomenon of overfitting. To counter this, only the dropout rate was increased for the next phase to improve generalization.
@@ -25,6 +27,7 @@ Although the second test successfully lowered the training loss, the validation 
 AdamW Optimizer; \
 Learning Rate: 3e-4; \
 Dropout: 0.15
+
 ![third training output](assets/trainingVSvalidationLoss03.png)
 
 During this phase, both training and validation losses successfully decreased to optimal levels, with validation loss only ticking up slightly in the final few iterations. This indicated that the learning rate and dropout were well-tuned, so a cosine learning rate scheduler was introduced for the final stage to smooth out the end-of-training anomaly and achieve even better results.
@@ -35,6 +38,7 @@ AdamW Optimizer; \
 Learning Rate: 3e-4; \
 Dropout: 0.15; \
 a new optimizer "cosine learning rate scheduler" is added.
+
 ![forth training output](assets/trainingVSvalidationLoss04.png)
 
 This phase delivered the best results among first 4, with both training and validation losses steadily plummeting throughout the entire training process until both reached optimal levels.
