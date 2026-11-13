@@ -34,4 +34,6 @@ During this phase, both training and validation losses successfully decreased to
 AdamW Optimizer;
 Learning Rate: 3e-4;
 Dropout: 0.15; a new optimizer "cosine learning rate scheduler" is added.
-![third training output](assets/trainingVSvalidationLoss03.png)
+![forth training output](assets/trainingVSvalidationLoss04.png)
+
+This phase delivered the best results among first 4, with both training and validation losses steadily plummeting throughout the entire training process until both reached optimal levels.
