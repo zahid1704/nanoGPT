@@ -4,8 +4,8 @@ This repository holds the source code for a Generative Pre-trained Transformer (
 Some of the training results and adjustments are discussed below. 
 
 # Phase 1:
-AdamW Optimizer;
-Learning Rate: 1e-3;
+AdamW Optimizer; \
+Learning Rate: 1e-3; \
 Dropout: 0.2
 ![first training output](assets/trainingVSvalidationLoss01.png)
 
@@ -13,8 +13,8 @@ The graph indicates that the model initially learned effectively before performa
 
 
 # Phase 2: 
-AdamW Optimizer;
-Learning Rate: 3e-4;
+AdamW Optimizer; \
+Learning Rate: 3e-4; \
 Dropout: 0.05
 ![second training output](assets/trainingVSvalidationLoss02.png)
 
@@ -22,8 +22,8 @@ Although the second test successfully lowered the training loss, the validation 
 
 
 # Phase 3: 
-AdamW Optimizer;
-Learning Rate: 3e-4;
+AdamW Optimizer; \
+Learning Rate: 3e-4; \
 Dropout: 0.15
 ![third training output](assets/trainingVSvalidationLoss03.png)
 
@@ -31,9 +31,10 @@ During this phase, both training and validation losses successfully decreased to
 
 
 # Phase 4:
-AdamW Optimizer;
-Learning Rate: 3e-4;
-Dropout: 0.15; a new optimizer "cosine learning rate scheduler" is added.
+AdamW Optimizer; \
+Learning Rate: 3e-4; \
+Dropout: 0.15; \
+a new optimizer "cosine learning rate scheduler" is added.
 ![forth training output](assets/trainingVSvalidationLoss04.png)
 
 This phase delivered the best results among first 4, with both training and validation losses steadily plummeting throughout the entire training process until both reached optimal levels.
