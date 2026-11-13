@@ -10,3 +10,12 @@ Dropout: 0.2
 ![first training output](assets/trainingVSvalidationLoss01.png)
 
 The graph indicates that the model initially learned effectively before performance gradually degraded, signaling that an excessively high learning rate caused the optimization to overshoot the gradient descent minima. To address this, both the learning rate and dropout rate were lowered for the subsequent training phase.
+
+
+# Phase 2: 
+AdamW Optimizer
+Learning Rate: 3e-4
+Dropout: 0.05
+![second training output](assets/trainingVSvalidationLoss02.png)
+
+Although the second test successfully lowered the training loss, the validation loss continued to climb after an initial improvement, causing a widening gap between the two curves—a classic phenomenon of overfitting. To counter this, the dropout rate was increased for the next phase to improve generalization.
