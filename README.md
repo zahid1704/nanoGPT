@@ -7,4 +7,5 @@ Some of the training results and adjustments are discussed below.
 AdamW Optimizer
 Learning Rate: 1e-3
 Dropout: 0.2
-![The graph indicates that the model initially learned effectively before performance gradually degraded, signaling that an excessively high learning rate caused the optimization to overshoot the gradient descent minima. To address this, both the learning rate and dropout rate were lowered for the subsequent training phase.](assets/trainingVSvalidationLoss01.png)
+![first training output](assets/trainingVSvalidationLoss01.png)
+The graph indicates that the model initially learned effectively before performance gradually degraded, signaling that an excessively high learning rate caused the optimization to overshoot the gradient descent minima. To address this, both the learning rate and dropout rate were lowered for the subsequent training phase.
