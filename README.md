@@ -52,3 +52,9 @@ Cosine Learning Rate Scheduler
 ![fifth training output](assets/trainingVSvalidationLoss05.png)
 
 During this phase, the gap between training and validation loss narrowed noticeably. Raising the dropout rate to 0.2 prevented the model from merely memorizing the training set, enabling it to generalize more effectively across the dataset.
+
+# Final Verdict: 
+A comparison between the two top-performing stages (Phase 4 and Phase 5) reveals that the latter achieved superior overall performance. While both demonstrated a steady decline in training and validation losses, Phase 5 maintained a narrower and more stable margin between the two curves. In contrast, Phase 4 exhibited a much sharper, more pronounced divergence.
+
+
+![GeneralizationGapPhase4vsPhase5 output](assets/GeneralizationGapPhase4vsPhase5.png)
