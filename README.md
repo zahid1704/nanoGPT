@@ -42,3 +42,13 @@ a new optimizer "cosine learning rate scheduler" is added.
 ![forth training output](assets/trainingVSvalidationLoss04.png)
 
 This phase delivered the best results among first 4, with both training and validation losses steadily plummeting throughout the entire training process until both reached optimal levels.
+
+# Phase 5: 
+AdamW Optimizer; \
+Learning Rate: 3e-4; \
+Dropout: 0.2; \
+Cosine Learning Rate Scheduler
+
+![fifth training output](assets/trainingVSvalidationLoss05.png)
+
+During this phase, the gap between training and validation loss narrowed noticeably. Raising the dropout rate to 0.2 prevented the model from merely memorizing the training set, enabling it to generalize more effectively across the dataset.
