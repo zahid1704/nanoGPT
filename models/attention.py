@@ -7,6 +7,11 @@ Original file is located at
     https://colab.research.google.com/drive/1BEWZKo68UAvfzPBD0q6mdNGXvoVg-5Df
 """
 
+# Importing packages
+
+import torch
+import torch.nn as nn
+
 class Head(nn.Module): # this is a head with self-attention
 
   def __init__(self, head_size):
