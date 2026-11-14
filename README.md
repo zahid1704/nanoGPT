@@ -58,3 +58,13 @@ A comparison between the two top-performing stages (Phase 4 and Phase 5) reveals
 
 
 ![GeneralizationGapPhase4vsPhase5 output](assets/GeneralizationGapPhase4vsPhase5.png)
+
+# Loss Curve on each step of Phase 5:
+AdamW Optimizer; \
+Learning Rate: 3e-4; \
+Dropout: 0.2; \
+Cosine Learning Rate Scheduler \
+Training and Validation Data Ratio (train:val) = (9:1) \
+50000 Steps of training
+
+![Loss_Curve_Each_Step_Phase05 output](assets/Loss_Curve_Each_Step_Phase05.png)
