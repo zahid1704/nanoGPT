@@ -4,7 +4,9 @@
 import torch
 import torch.nn as nn
 
-class Head(nn.Module): # this is a head with self-attention
+
+# this is a head with self-attention
+class Head(nn.Module): 
 
   def __init__(self, head_size):
     super().__init__()
