@@ -1,1 +1,1 @@
-
+This project was developed across two distinct training phases. Initially, the model was trained and evaluated on the Tiny Shakespeare corpus (~11.2 million characters). To scale up language modeling capabilities, training was extended to the Hugging Face TinyStories dataset (containing nearly 2 billion characters). Due to hardware compute constraints, a subset of 400,000 stories (~361 million characters) was used for training, paired with a dedicated validation set of 40,000 stories (~20 million characters).
