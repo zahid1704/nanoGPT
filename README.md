@@ -73,12 +73,12 @@ Training and Validation Data Ratio (train:val) = (9:1) \
 # Trying Different New Dataset
 Retaining the identical hyperparameters from Phase 5 of the Tiny Shakespeare training, scaling the nanoGPT model to the TinyStories dataset yielded exceptional results. Throughout the training cycle, the training and validation loss curves tracked one another almost identically, resulting in a near-zero generalization gap and a complete absence of overfitting.
 ![LossOnCurveOntrainingVSvalidationLossTinyStories output](assets/trainingVSvalidationLoss_TinyStories.png)
-![LossOnCurveOntrainingVSvalidationLossTinyStories output](assets/trainingVSvalidationLoss_TinyStories.png)
+
 
 
 Comparing the training-versus-validation loss gap between the Tiny Shakespeare (Phase 5) and TinyStories runs reveals that TinyStories achieves a virtually zero generalization gap, with both loss curves running completely parallel. This demonstrates that the hyperparameter configuration established in the previous phase was fundamentally optimal, allowing the model to effectively generalize data patterns when provided with sufficient training scale.
 
-![LossCurveOnEachStepOfTinyStories_output](assets/LossCurveOnEachStepOfTinyStories.png)
+![LossCurveOnGeneralizationGapShakespeare_vs_TinyStories_output](assets/GeneralizationGapShakespeare_vs_TinyStories.png)
 
 
 
