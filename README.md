@@ -78,7 +78,15 @@ Retaining the identical hyperparameters from Phase 5 of the Tiny Shakespeare tra
 
 Comparing the training-versus-validation loss gap between the Tiny Shakespeare (Phase 5) and TinyStories runs reveals that TinyStories achieves a virtually zero generalization gap, with both loss curves running completely parallel. This demonstrates that the hyperparameter configuration established in the previous phase was fundamentally optimal, allowing the model to effectively generalize data patterns when provided with sufficient training scale.
 
-![LossCurveOnGeneralizationGapShakespeare_vs_TinyStories_output](assets/GeneralizationGapShakespeare_vs_TinyStories.png)
+# Loss Curve on each step of TinyStories:
+AdamW Optimizer; \
+Learning Rate: 3e-4; \
+Dropout: 0.2; \
+Cosine Learning Rate Scheduler \
+Training and Validation Data Ratio (train:val) = (9:1) => (400K:40K) stories \
+50000 Steps of training
+
+![LossCurveOnEachStepOfTinyStories_output](assets/LossCurveOnEachStepOfTinyStories.png)
 
 
 
